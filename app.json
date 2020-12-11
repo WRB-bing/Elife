@@ -1,0 +1,52 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/lifeTips/lifeTipsName/lifeTipsName",
+    "pages/lifeTips/lifeTipDetail/lifeTipDetail",
+    "pages/my/myHome/myHome",
+    "pages/my/myzan/myzan",
+    "pages/my/myshoucang/myshoucang",
+    "pages/my/rank/rank",
+    "pages/my/opinion/opinion",
+    "pages/my/people/people",
+    "pages/elife/guide/guide",
+    "pages/elife/functionPage/functionPage",
+    "pages/elife/detail/detail",
+    "pages/elife/end/end"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "乐易Elife",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar":{
+    "selectedColor": "#00c4b3",
+    "list":[
+      {
+        "pagePath": "pages/lifeTips/lifeTipsName/lifeTipsName",
+        "text":"生活小贴士",
+        "iconPath":"pics/pre_book.png",
+        "selectedIconPath":"pics/sel_book.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text":"易用APP",
+        "iconPath":"pics/pre_index.png",
+        "selectedIconPath":"pics/sel_index.png"
+      },
+      {
+        "pagePath": "pages/my/myHome/myHome",
+        "text":"我的",
+        "iconPath":"pics/pre_my.png",
+        "selectedIconPath":"pics/sel_my.png"
+      }
+    ]
+  },
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

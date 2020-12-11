@@ -1,0 +1,28 @@
+<!--pages/lifeTips/lifeTipDetail/lifeTipDetail.wxml-->
+
+<view>
+  <view  class="views">
+    <text class='title'>{{article[0]['title']}}\n</text>
+        <!-- 音频 -->
+    <audio class="audio" id="audio" src="{{article[0]['voice']}}" controls="true" author="佚名" name="{{article[0]['title']}}" poster="{{article[0]['image']}}" bindtap="audioPlay"></audio>
+    <text class="content">{{content}}</text>
+  </view>
+  <!-- 赞和收藏 -->
+  <view class="zan" bindtap="getLike" hidden="{{ishidden}}">
+    <image  src="../../../pics/love.png"></image>
+    <text>点　赞</text>
+  </view>
+  <view class="zan" bindtap="cancleLike" hidden="{{!ishidden}}">
+    <image  src="../../../pics/love2.png"></image>
+    <text>已　赞</text>
+  </view>
+  <!--hidden="{!colhidden}"  -->
+  <view class="shoucang" bindtap="getCollect" hidden="{{colhidden}}">
+    <image src="../../../pics/shoucang.png"></image>
+    <text>收　藏</text>
+  </view>
+  <view class="shoucang" bindtap="cancleCollect" hidden="{{!colhidden}}">
+    <image src="../../../pics/shoucang1.png"></image>
+    <text>已收藏</text>
+  </view>
+</view>

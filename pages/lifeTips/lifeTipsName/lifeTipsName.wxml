@@ -1,0 +1,11 @@
+<!--pages/lifeTips/lifeTipsName/lifeTipsName.wxml-->
+<view wx:for="{{list}}" wx:key="index" class="titleList" bindtap="goToPage" id="{{list[index]['id']}}">
+  <view class="publisher">
+    <image src="../../../pics/yiyong.png" class="logo"></image>
+    <span class='span1'>生活小贴士</span>
+    <span class='span2'> {{list[index]['date']}}</span>
+  </view>
+  <image src="{{list[index]['image']}}" class='img'></image>
+  <text class="title">　{{list[index]['title']}}</text>
+  <image src="../../../pics/right.png" class="arrow"></image>
+</view>

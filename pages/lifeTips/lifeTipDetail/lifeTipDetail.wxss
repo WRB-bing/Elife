@@ -1,0 +1,76 @@
+/* pages/lifeTips/lifeTipDetail/lifeTipDetail.wxss */
+
+.views{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.title{
+  font-size: 50rpx;
+  font-weight: 540;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.audio{
+  display: block;
+  height: 160rpx;
+  margin-top: 20rpx;
+}
+.content{
+  line-height: 50rpx;
+
+}
+
+/* 点赞 */
+.zan{
+  position: absolute;
+  left: 100rpx;
+  height: 80rpx;
+  width: 240rpx;
+  background-color: #00b3c4;
+  border-radius: 30rpx 30rpx 30rpx 30rpx;
+  position:absolute;
+  bottom:7px
+}
+.zan text{
+  position: relative;
+  left: 30rpx;
+  bottom:5rpx;
+  color: #fff;
+  font-size: larger;
+  font-weight: bold;
+}
+.zan image{
+  position: relative;
+  left: 16rpx;
+  top:10rpx;
+  width:30px;
+  height:30px
+}
+/* 收藏 */
+.shoucang{
+  position: absolute;
+  left:400rpx;
+  height: 80rpx;
+  width: 240rpx;
+  background-color: #00b3c4;
+  border-radius: 30rpx 30rpx 30rpx 30rpx;
+  position:absolute;
+  bottom:7px
+}
+.shoucang text{
+  position: relative;
+  left: 30rpx;
+  bottom:5rpx;
+  color: #fff;
+  font-size: larger;
+  font-weight: bold;
+}
+.shoucang image{
+    position: relative;
+    left: 16rpx;
+    top:10rpx;
+    width:30px;
+    height:30px
+}

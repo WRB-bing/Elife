@@ -1,0 +1,20 @@
+<!--pages/elife/detail/detail.wxml-->
+
+<!--  详情步骤页 -->
+<view wx:key="index" class="views" >
+  <!-- 图片 -->
+  <image src="{{step['image']}}" class="step" ></image>
+  <!-- 圆点 -->
+  <image src='../../../pics/dote.png' class="dote animImage" style="position:absolute;left:{{step['dote1']}}rpx;top:{{step['dote2']}}rpx;" bindtap="nextStep"></image>
+  <!-- 说明文字 -->
+  <text style="position:absolute;left:{{step['dote3']}}rpx;top:{{step['dote4']}}rpx" bindtap="nextStep"class='word'>　{{step['text']}}　</text>
+  <!-- 左右箭头 -->
+  <view>
+    <view class="preStep" bindtap="preStep">
+      <image src="../../../pics/left.png" style="width:100rpx;height:100rpx"></image>
+    </view>
+    <view class="nextStep" bindtap="nextStep">
+      <image src="../../../pics/right.png" style="width:100rpx;height:100rpx"></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,111 @@
+/* pages/my/myHome/myHome.wxss */
+/* 头像 */
+
+.bgcolor{
+  background-color: #00b3c4;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+}
+
+.userinfo {
+  display: flex;
+  margin-top: 150rpx;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-top: -70rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #000;
+  font-size: larger;
+}
+
+.bgimage{
+  height:20%;
+  width: 25%; 
+  left:-110rpx;
+  top:70rpx; 
+}
+
+.jifen{
+  /* position: absolute; */
+  float: left;
+  margin-top:20rpx;
+  margin-left: 20rpx;
+}
+
+/* 内容 */
+.options{
+  position: relative;
+  top:250rpx;
+}
+
+.line{
+  width:90%;
+  height:2rpx;
+  background-color:#D3D3D3;
+  position: absolute;
+  left: 100rpx;
+}
+
+.content{
+  margin-top: -200rpx;
+}
+
+.zan, 
+.shoucang, 
+.rank,
+.opinion,
+.people{
+  position: relative;
+  width: 100%;
+  height: 75rpx;
+  border-bottom: 1px solid #D3D3D3;
+  border-top: 1px solid #D3D3D3;
+  line-height: 75rpx;
+  font-size: large;
+  margin-top: 30rpx;
+} 
+
+.zan{
+  border-bottom: 0;
+}
+.shoucang{
+  margin-top: 0;
+  border-top: 0;
+}
+
+.opinion{
+  border-bottom: 0;
+}
+.people{
+  margin-top: 0;
+  border-top: 0;
+}
+
+
+/* 图标 */
+.arrow{
+  position:absolute;
+  top:15rpx;
+  right: 30rpx;
+  width: 5%;
+  height: 70%;
+}
+.heart,
+.star,
+.credit,
+.comment,
+.setting{
+  position: absolute;
+  left: 20rpx;
+  top: 10rpx;
+  width: 7%;
+  height: 80%;
+}

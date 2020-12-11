@@ -1,0 +1,33 @@
+<!--index.wxml-->
+
+<!-- 轮播图 -->
+<swiper  style="height:500rpx" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" class='slide-image'/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="text">
+  <view class="childtext">
+    <text decode="{{true}}">
+      模&nbsp;&nbsp;&nbsp;拟&nbsp;&nbsp;&nbsp;使&nbsp;&nbsp;&nbsp;用&nbsp;&nbsp;&nbsp;教&nbsp;&nbsp;&nbsp;程
+    </text>
+  </view>
+</view>
+
+<!-- APP列表 -->
+<view wx:for="{{list}}"  wx:key="index">
+  <view style="height:150rpx;border-bottom:1px solid lightgray;" bindtap="goToPage" id="{{list[index]['appname']}}">
+    <view class="ap">
+      <image src="{{list[index]['image']}}" style="width:100rpx;height:100rpx;margin-left:10rpx;margin-top:8rpx;"></image>
+    </view>
+    <view style="float:right;height:150rpx;width:500rpx;">
+      <text class="apptext">{{list[index]['cname']}}</text>
+      <!-- <image src="../../pics/people.png" class="picon"></image>
+      <image src="../../pics/phone.png" class="phoicon"></image> -->
+      <text style="float:left;line-height:150rpx;font-size:30rpx;margin-left:125rpx;color:gray">立即学习</text>
+      <image src="../../pics/right.png" style="float:left;width:35rpx;height:40rpx;margin-top:55rpx;margin-left:20rpx"></image>
+    </view>
+  </view>
+</view>

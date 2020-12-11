@@ -1,0 +1,26 @@
+/* pages/lifeTips/lifeTipsName/lifeTipsName.wxss */
+
+.titleList{
+  border:2rpx solid #bfbfbf;
+  border-radius: 15rpx 15rpx 15rpx 15rpx;
+  width: 90%;
+  position: relative;
+  left: 30rpx;
+  margin-top: 30rpx;
+}
+
+.title{
+  display: block;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-top:2rpx solid #bfbfbf ;
+}
+
+.arrow{
+  width: 50rpx;
+  height: 50rpx;
+  display: inline-block;
+  float: right;
+  margin-top: -60rpx;
+  margin-right: 15rpx;
+}

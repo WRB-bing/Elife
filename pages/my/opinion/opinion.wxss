@@ -1,0 +1,26 @@
+/* pages/my/opinion/opinion.wxss */
+
+/* 提示框 */
+.tip{
+  border-bottom: 2rpx solid #aaa;
+  border-top: 2rpx solid #aaa;
+  height: 85rpx;
+  line-height: 85rpx;
+  font-size: larger;
+}
+.tip text{
+  margin-left:20rpx;
+}
+
+/* 输入框 */
+.opinion{
+  border-bottom: 2rpx solid #aaa;
+  height: 300rpx;
+}
+.opinion textarea{
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  font-size: 20;
+}
+
+/* 按钮 */

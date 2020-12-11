@@ -1,0 +1,6 @@
+<!--pages/my/people/people.wxml-->
+
+<text>开发人员\n</text>
+<text>hebtu software\n</text>
+<text>陈欣 李宁 卢冰 齐盼盼 王若冰 赵健\n</text>
+<text>（按字母表顺序排序）</text>

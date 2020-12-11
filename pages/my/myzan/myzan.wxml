@@ -1,0 +1,7 @@
+<!--pages/my/myzan/myzan.wxml-->
+
+<view wx:for="{{list}}" wx:key="index" class="titleList" bindtap="goToPage" id="{{list[index]['id']}}">
+  <image src="{{list[index]['image']}}" style="width:350rpx;height:350rpx"></image>
+  <text class="title">　{{list[index]['title']}}</text>
+  <image src="../../../pics/right.png" class="arrow"></image>
+</view>

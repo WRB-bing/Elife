@@ -1,0 +1,23 @@
+<!--pages/my/rank/rank.wxml-->
+
+<view class="head">
+  <canvas canvas-id="rank">  
+    <text class="paiming">当前排名</text>
+    <text class="mingci">{{rank}}</text>
+  </canvas>
+</view>
+
+<!-- 排名 -->
+<view class='title'>
+  <text style="display:inline-block;float:left;margin-left:60rpx">排名</text>
+  <text style="display:inline-block;float:left;margin-left:170rpx">昵称</text>
+  <text style="display:inline-block;float:left;margin-left:195rpx">积分</text>
+  <!-- wxuser/userPoint -->
+  <text>\n</text>
+</view>
+<view wx:for="{{arr}}" class="rankingList">
+  <text class="rank">{{index+1}}</text>
+  <text class="name">{{item.username}}</text>
+  <text class="credits">{{item.integral}}</text>
+  <text>\n</text>
+</view>
