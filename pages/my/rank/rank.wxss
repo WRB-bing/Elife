@@ -8,18 +8,19 @@
 
 .head canvas {
   height: 400rpx;
+  position:fixed;
 }
 
 .paiming{
-  float: left;
-  margin-top: 170rpx;
-  margin-left: 320rpx;
+  position: fixed;
+  top:10%;
+  left:41%;
   color: #00b3c4;
 }
 .mingci{
-  float: left;
-  margin-top: 225rpx;
-  margin-left: -95rpx;
+  position: fixed;
+  top:15%;
+  left:46%;
   color: #00b3c4;
   font-size: 90rpx;
   font-weight: 600;

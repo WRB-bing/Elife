@@ -27,7 +27,7 @@
       </view>
     </view>
 
-    <text class="line" style="height:1rpx;"></text>
+    <text class="line" style="height:2rpx;"></text>
 
     <view bindtap='login' id="/pages/my/myshoucang/myshoucang">
       <view class="shoucang">

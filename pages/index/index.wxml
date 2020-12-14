@@ -11,7 +11,7 @@
 <view class="text">
   <view class="childtext">
     <text decode="{{true}}">
-      模&nbsp;&nbsp;&nbsp;拟&nbsp;&nbsp;&nbsp;使&nbsp;&nbsp;&nbsp;用&nbsp;&nbsp;&nbsp;教&nbsp;&nbsp;&nbsp;程
+      --&nbsp;模&nbsp;&nbsp;&nbsp;拟&nbsp;&nbsp;&nbsp;使&nbsp;&nbsp;&nbsp;用&nbsp;&nbsp;&nbsp;教&nbsp;&nbsp;&nbsp;程&nbsp;--
     </text>
   </view>
 </view>

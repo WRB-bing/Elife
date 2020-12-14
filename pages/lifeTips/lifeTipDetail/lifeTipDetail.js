@@ -139,7 +139,7 @@ Page({
             console.log('获取失败')
           }
         })
-      },0)
+      },300)
       setTimeout(()=>{console.log(this.data.zanlist)
         let hidden=this.data.zanlist.some((item)=>item.id===wx.getStorageSync('article_id'))
         let lhidden=this.data.canglist.some((item)=>item.id===wx.getStorageSync('article_id'))
@@ -148,7 +148,7 @@ Page({
           colhidden:lhidden
         })
         console.log(this.data.ishidden)
-      },900)
+      },1000)
     // this.setData({
     //     ishidden: wx.getStorageSync('ishidden'),
     //     colhidden: wx.getStorageSync('colhidden'),

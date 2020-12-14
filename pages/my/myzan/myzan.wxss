@@ -1,19 +1,59 @@
-/* pages/lifeTips/lifeTipsName/lifeTipsName.wxss */
 
-.titleList{
-  border:2rpx solid #bfbfbf;
-  border-radius: 15rpx 15rpx 15rpx 15rpx;
-  width: 90%;
-  position: relative;
-  left: 30rpx;
-  margin-top: 30rpx;
+page{
+  background-color: rgb(237,237,237);
 }
-
+.publisher{
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+.logo{
+  display: block;
+  width:30px;
+  height: 100%;
+  margin-right:5px;
+  float:left;
+  overflow: hidden;
+}
+.span1{
+  width:30%;
+  height: 30px;
+  display: block;
+  line-height: 30px;
+  float: left;
+  font-size: smaller;
+}
+.span2{
+  height: 30px;
+  display: block;
+  line-height: 30px;
+  float: right;
+  margin-right: 20px;
+  overflow: hidden;
+  color:#bbb;
+  font-size: smaller;
+}
+.titleList{
+  border-radius: 15rpx;
+  overflow:hidden;
+  width: 94%;
+  position: relative;
+  left: 3%;
+  margin-top: 60rpx;
+  margin-bottom: 10rpx;
+  background-color: #fff;
+}
+.titleList .img{
+  width:100%;
+  height:300rpx;
+}
 .title{
   display: block;
   height: 70rpx;
   line-height: 70rpx;
-  border-top:2rpx solid #bfbfbf ;
+  font-weight:bold;
 }
 
 .arrow{
@@ -22,5 +62,10 @@
   display: inline-block;
   float: right;
   margin-top: -60rpx;
-  margin-right: 15rpx;
+  margin-right: 20rpx;
+}
+page{
+  background-size:cover;
+  width:100%;
+  height:100%;
 }

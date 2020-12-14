@@ -11,26 +11,26 @@
   height: 80rpx;
   line-height: 80rpx;
 }
-
 .audio{
   display: block;
   height: 160rpx;
-  margin-top: 20rpx;
+  margin-top: 30rpx;
 }
 .content{
-  line-height: 50rpx;
-
+  float: left;
+  margin-top: 15rpx;
+  line-height: 60rpx;
+  margin-bottom: 100rpx;
 }
 
 /* 点赞 */
 .zan{
-  position: absolute;
   left: 100rpx;
   height: 80rpx;
   width: 240rpx;
   background-color: #00b3c4;
   border-radius: 30rpx 30rpx 30rpx 30rpx;
-  position:absolute;
+  position:fixed;
   bottom:7px
 }
 .zan text{
@@ -56,7 +56,7 @@
   width: 240rpx;
   background-color: #00b3c4;
   border-radius: 30rpx 30rpx 30rpx 30rpx;
-  position:absolute;
+  position:fixed;
   bottom:7px
 }
 .shoucang text{

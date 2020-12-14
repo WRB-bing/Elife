@@ -38,8 +38,8 @@ Page({
     let step = this.data.steps
     let i = this.data.i
     if (i < step.length) {
-      console.log(i)
       i++
+      console.log('当前',i)
       this.data.i = i
       this.setData({
         step: step[i],

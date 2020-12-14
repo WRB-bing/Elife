@@ -1,15 +1,9 @@
 <!--pages/my/opinion/opinion.wxml-->
 
-<view class="tip">
-  <text>请在下方输入:</text>
-</view>
-
 <view class="opinion">
   <form bindsubmit="onSubmit">
     <textarea name="context" placeholder=" 您的意见和建议……"></textarea>
-    <navigator url="/pages/my/myHome/myHome" open-type="switchTab" >
-      <button form-type="submit" style="width:100%;margin-top:50rpx;color:#00b3c4;font-size:50rpx">提交</button>
-    </navigator>
+      <button form-type="submit" style="width:100%;margin-top:60rpx;background-color:#00b3c4;color:white;font-size:50rpx">提交</button>
   </form>
 </view>
 

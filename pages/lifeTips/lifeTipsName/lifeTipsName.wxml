@@ -3,7 +3,7 @@
   <view class="publisher">
     <image src="../../../pics/yiyong.png" class="logo"></image>
     <span class='span1'>生活小贴士</span>
-    <span class='span2'> {{list[index]['date']}}</span>
+    <span class='span2'> {{date[index]}}</span>
   </view>
   <image src="{{list[index]['image']}}" class='img'></image>
   <text class="title">　{{list[index]['title']}}</text>

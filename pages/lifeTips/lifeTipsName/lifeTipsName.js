@@ -9,12 +9,6 @@ Page({
 
   },
 
-  // 页面跳转
-  // gotoPage:function(e){
-  //   wx.navigateTo({
-  //     url:'/pages/lifeTips/lifeTipDetail/lifeTipDetail?id='+e.currentTarget.id
-  //   })
-  // }
   goToPage:function(e){
     console.log(e)
     if(app.globalData.userInfo){
@@ -45,11 +39,15 @@ Page({
     wx.request({
       url:'http://211.159.166.29:1234/usepassage',
       success:(res)=>{
+        let date = []
         console.log(res.data)
         console.log(res.data[0]['date'].slice(0,10));
-        
+        for(let i=0;i<res.data.length;i++){
+          date[i]=res.data[i]['date'].split('/')[2]+'/'+res.data[i]['date'].split('/')[0]+'/'+res.data[i]['date'].split('/')[1]
+        }
         this.setData({
           list:res.data.reverse(),
+          date:date
         })
       }
     })

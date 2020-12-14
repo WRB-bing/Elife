@@ -42,7 +42,7 @@ page{
   position: relative;
   left: 3%;
   margin-top: 60rpx;
-  margin-bottom: 10rpx;
+  margin-bottom: 50rpx;
   background-color: #fff;
 }
 .titleList .img{

@@ -13,8 +13,8 @@ Page({
     // 绘制圆形
     var ctx = wx.createCanvasContext("rank");
     var width = 150;
-    var x = 190;
-    var y = 120;
+    var x = 180;
+    var y = 110;
 
     //开始绘制
     ctx.beginPath();
@@ -35,6 +35,7 @@ Page({
       success: res => {
         console.log(wx.getStorageSync('token'))
         console.log(res.data)
+        console.log(res.data.index)
         this.setData({
           arr: res.data.list,
           rank: res.data.index
