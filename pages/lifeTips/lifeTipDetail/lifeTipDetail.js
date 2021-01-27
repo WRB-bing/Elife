@@ -1,4 +1,10 @@
 // pages/lifeTips/lifeTipDetail/lifeTipDetail.js
+
+// "pages/index/index",
+//"pages/elife/guide/guide",
+// "pages/elife/functionPage/functionPage",
+// "pages/elife/detail/detail",
+// "pages/elife/end/end"
 Page({
   /**
    * 页面的初始数据
@@ -21,9 +27,21 @@ Page({
       success: res => {
         console.log('点赞成功')
         this.setData({
-          ishidden: !this.data.ishidden,
+          ishidden: true,
         })
-        // wx.setStorageSync('ishidden',true)
+        wx.request({
+          url:'http://211.159.166.29:1234/wxuser/userLike',
+          header: {
+            "authorization": wx.getStorageSync('token')
+          },
+          success:res=>{
+            wx.removeStorageSync('zanlist')
+            wx.setStorageSync('zanlist',res.data)
+          },
+          fail: res => {
+            console.log('获取列表失败')
+          }
+        })
       },
       fail: res => {
         console.log('点赞失败')
@@ -46,7 +64,19 @@ Page({
          this.setData({
           ishidden: !this.data.ishidden
         })
-        wx.setStorageSync('ishidden',false)
+        wx.request({
+          url:'http://211.159.166.29:1234/wxuser/userLike',
+          header: {
+            "authorization": wx.getStorageSync('token')
+          },
+          success:res=>{
+            wx.removeStorageSync('zanlist')
+            wx.setStorageSync('zanlist',res.data)
+          },
+          fail: res => {
+            console.log('获取列表失败')
+          }
+        })
       },
       fail: res => {
         console.log('取消失败')
@@ -70,7 +100,19 @@ Page({
         this.setData({
           colhidden: !this.data.colhidden
         })
-        wx.setStorageSync('colhidden',true)
+        wx.request({
+          url:'http://211.159.166.29:1234/wxuser/userCollection',
+          header: {
+            "authorization": wx.getStorageSync('token')
+          },
+          success:res=>{
+            wx.removeStorageSync('collist')
+            wx.setStorageSync('collist',res.data)
+          },
+          fail: res => {
+            console.log('获取列表失败')
+          }
+        })
       },
       fail: res => {
         console.log('收藏失败')
@@ -92,6 +134,19 @@ Page({
           colhidden: !this.data.colhidden
         })
         console.log('取消收藏')
+        wx.request({
+          url:'http://211.159.166.29:1234/wxuser/userCollection',
+          header: {
+            "authorization": wx.getStorageSync('token')
+          },
+          success:res=>{
+            wx.removeStorageSync('collist')
+            wx.setStorageSync('collist',res.data)
+          },
+          fail: res => {
+            console.log('获取列表失败')
+          }
+        })
       },
       fail: res => {
         console.log('取消失败')
@@ -104,55 +159,70 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      setTimeout(()=>{
-        wx.request({
-          url: 'http://211.159.166.29:1234/wxuser/userLike',
-          header: {
-            "authorization": wx.getStorageSync('token')
-          },
-          success: res => {
-            console.log('获取成功')
-            this.setData({
-              zanlist:res.data,
-            })
-            wx.setStorageSync('ishidden',true)
+      // setTimeout(()=>{
+      //   wx.request({
+      //     url: 'http://211.159.166.29:1234/wxuser/userLike',
+      //     header: {
+      //       "authorization": wx.getStorageSync('token')
+      //     },
+      //     success: res => {
+      //       console.log('获取成功')
+      //       console.log(res.data)
+      //       this.setData({
+      //         zanlist:res.data,
+      //       })
+      //       wx.setStorageSync('ishidden',true)
     
-          },
-          fail: res => {
-            console.log('获取失败')
-          }
-        })
-        wx.request({
-          url: 'http://211.159.166.29:1234/wxuser/userCollection',
-          header: {
-            "authorization": wx.getStorageSync('token')
-          },
-          success: res => {
-            console.log('获取成功')
-            this.setData({
-              canglist:res.data,
-            })
-            // wx.setStorageSync('colhidden',true)
+      //     },
+      //     fail: res => {
+      //       console.log('获取失败')
+      //     }
+      //   })
+      //   wx.request({
+      //     url: 'http://211.159.166.29:1234/wxuser/userCollection',
+      //     header: {
+      //       "authorization": wx.getStorageSync('token')
+      //     },
+      //     success: res => {
+      //       console.log('获取成功')
+      //       this.setData({
+      //         canglist:res.data,
+      //       })
+      //       // wx.setStorageSync('colhidden',true)
     
-          },
-          fail: res => {
-            console.log('获取失败')
-          }
-        })
-      },300)
-      setTimeout(()=>{console.log(this.data.zanlist)
-        let hidden=this.data.zanlist.some((item)=>item.id===wx.getStorageSync('article_id'))
-        let lhidden=this.data.canglist.some((item)=>item.id===wx.getStorageSync('article_id'))
-        this.setData({
-          ishidden:hidden,
-          colhidden:lhidden
-        })
-        console.log(this.data.ishidden)
-      },1000)
+      //     },
+      //     fail: res => {
+      //       console.log('获取失败')
+      //     }
+      //   })
+      // },300)
+      // setTimeout(()=>{console.log(this.data.zanlist)
+      //   let hidden=this.data.zanlist.some((item)=>item.id===wx.getStorageSync('article_id'))
+      //   let lhidden=this.data.canglist.some((item)=>item.id===wx.getStorageSync('article_id'))
+      //   this.setData({
+      //     ishidden:hidden,
+      //     colhidden:lhidden
+      //   })
+      //   console.log(this.data.ishidden)
+      // },1000)
+
     // this.setData({
     //     ishidden: wx.getStorageSync('ishidden'),
     //     colhidden: wx.getStorageSync('colhidden'),
     // })
+    let hi=wx.getStorageSync('zanlist')
+    let li=wx.getStorageSync('collist')
+      if(hi){
+          this.setData({
+            ishidden:hi.some((item)=>item.id===this.options.id),
+          })
+        }
+      if(li){
+        let lhidden=li.some((item)=>item.id===this.options.id)
+        this.setData({
+          colhidden:lhidden
+        })
+      }
     // 存文章id
     wx.setStorageSync('article_id', this.options.id)
     console.log(wx.getStorageSync('article_id'))

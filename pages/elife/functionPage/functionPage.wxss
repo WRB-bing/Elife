@@ -5,11 +5,16 @@
   border-radius: 40rpx 40rpx 40rpx 40rpx;
   background-color: #00b3c4;
   float: left;
-  margin-top: 110rpx;
   margin-left: 120rpx;
   line-height: 150rpx;
   text-align: center;
   font-size: larger;
   color: #fff;
   font-weight: 1000;
+}
+
+.views {
+  float: left;
+  margin-top: 50rpx;
+ margin-bottom: 50rpx;
 }

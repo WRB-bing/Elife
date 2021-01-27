@@ -2,8 +2,5 @@
 
 <!-- 功能选择页 -->
 <view wx:for="{{choice}}" wx:key="index" class="views " >
-<!-- <navigator open-type='navigate' url="/pages/elife/guide/guide"> -->
-  <!-- <image src="{{choice[index]['g']}}" style="width:350rpx;height:350rpx"></image> -->
   <text class="fun" bindtap="goToPage" id="{{choice[index]['ename']}}">{{choice[index]['name']}}</text>
-<!-- </navigator> -->
 </view>

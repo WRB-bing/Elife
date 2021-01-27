@@ -14,13 +14,13 @@
 .paiming{
   position: fixed;
   top:10%;
-  left:41%;
+  left:40%;
   color: #00b3c4;
 }
 .mingci{
   position: fixed;
   top:15%;
-  left:46%;
+  left:45%;
   color: #00b3c4;
   font-size: 90rpx;
   font-weight: 600;
